@@ -1,13 +1,13 @@
-# Xilinx ISCA 2020 tutorial
+# Xilinx ICS 2020 tutorial
 
-Saturday May 30 10:00 - 13:00 (East time)
+Monday 29 June 10:00 - 18:00 (Central European Time)
 
 ## Connecting to AWS
 
 This  guide will show you how to connect to a Xilinx provided AWS EC2 F1 instance, and starting and stopping the instance. 
 
 ## Steps
-Each registered participant to the ISCA2020 Xilinx tutorial has been allocated a pre-configured EC2 F1 instance. You should already have received an email with the following details:  
+Each registered participant to the tutorial has been allocated a pre-configured EC2 F1 instance. You should already have received an email with the following details:  
 
 - Account ID,
 - IAM username,
@@ -92,27 +92,20 @@ The NICE DCV session has already been started on the instance provided. .
 
 ## Lab setup
 
-* Open a terminal and execute the following commands to clone the *aws-fpga* repository and setup the Xilinx tools.
+* Open a terminal and execute the following commands to clone the *aws-fpga* repository and setup the Xilinx tools. aws-fpga includes the AWS F1 tools, HDK and documentation:
 
-  ```sh
-  git clone https://github.com/aws/aws-fpga $AWS_FPGA_REPO_DIR -b v1.4.14
-  cd $AWS_FPGA_REPO_DIR                                        
-  source vitis_setup.sh
-  source vitis_runtime_setup.sh
-  ```
-* Add the source scripts to your .bashrc file 
-  
-  ```sh
-  echo "export PLATFORM_REPO_PATHS=$AWS_FPGA_REPO_DIR/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/" >> ~/.bashrc
-  echo "source /opt/xilinx/xrt/setup.sh" >> ~/.bashrc
-  ```
-Reload your .bashrc in the current terminal
-
-  ```sh
-  source ~/.bashrc
-  ```
-
-
+```sh
+    git clone https://github.com/aws/aws-fpga $AWS_FPGA_REPO_DIR -b v1.4.14
+    #Include AWS platforms by default
+    echo "export PLATFORM_REPO_PATHS=$AWS_FPGA_REPO_DIR/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/" >> ~/.bashrc
+    #Source XRT everytime a new terminal is open
+    echo "source /opt/xilinx/xrt/setup.sh" >> ~/.bashrc
+    #Reload .bashrc in the current terminal
+    source ~/.bashrc
+    #Source AWS configuration files
+    source $AWS_FPGA_REPO_DIR/vitis_setup.sh
+    source $AWS_FPGA_REPO_DIR/vitis_runtime_setup.sh
+```
 
 # Video Guide
 
@@ -123,12 +116,11 @@ Start AWS instance: https://www.youtube.com/watch?v=--o7PTRlePA&t=6s
 Connect using NICE DCV: https://www.youtube.com/watch?v=7k6dG8hjKR0
 
 
-
 ## Start the labs
 
 Once you have done this, open the tutorial instructions:
 
-​	~/compute_acceleration/**isca2020.html** 
+​	~/compute_acceleration/**ICS2020.html** 
 
 Start from the first lab: **Introduction to Vitis Part 1**. 
 
