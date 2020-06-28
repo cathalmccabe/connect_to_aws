@@ -94,18 +94,18 @@ The NICE DCV session has already been started on the instance provided. .
 
 * Open a terminal and execute the following commands to clone the *aws-fpga* repository and setup the Xilinx tools. aws-fpga includes the AWS F1 tools, HDK and documentation:
 
-```sh
-    git clone https://github.com/aws/aws-fpga $AWS_FPGA_REPO_DIR -b v1.4.14
-    #Include AWS platforms by default
-    echo "export PLATFORM_REPO_PATHS=$AWS_FPGA_REPO_DIR/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/" >> ~/.bashrc
-    #Source XRT everytime a new terminal is open
-    echo "source /opt/xilinx/xrt/setup.sh" >> ~/.bashrc
-    #Reload .bashrc in the current terminal
-    source ~/.bashrc
-    #Source AWS configuration files
-    source $AWS_FPGA_REPO_DIR/vitis_setup.sh
-    source $AWS_FPGA_REPO_DIR/vitis_runtime_setup.sh
-```
+  ```sh
+  git clone https://github.com/aws/aws-fpga $AWS_FPGA_REPO_DIR -b v1.4.14
+  #Include AWS platforms by default
+  echo "export PLATFORM_REPO_PATHS=$AWS_FPGA_REPO_DIR/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/" >> ~/.bashrc
+  #Source XRT everytime a new terminal is open
+  echo "source /opt/xilinx/xrt/setup.sh" >> ~/.bashrc
+  #Reload .bashrc in the current terminal
+  source ~/.bashrc
+  #Source AWS configuration files
+  source $AWS_FPGA_REPO_DIR/vitis_setup.sh
+  source $AWS_FPGA_REPO_DIR/vitis_runtime_setup.sh
+  ```
 
 # Video Guide
 
