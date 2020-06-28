@@ -1,6 +1,6 @@
 # Xilinx ICS 2020 tutorial
 
-Monday 29 June 10:00 - 18:00 (Central European Time)
+Monday 29 June 2020 10:00 - 18:00 (Central European Time)
 
 ## Connecting to AWS
 
