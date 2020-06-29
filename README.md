@@ -16,6 +16,7 @@ Each registered participant to the tutorial has been allocated a pre-configured 
 ### Login into the AWS and starting an F1 instance
 
 * Follow the link provided by your instructor, or go to [https://console.aws.amazon.com/ec2](https://console.aws.amazon.com/ec2) to open a login page.
+* Select IAM user if necessary
 
   If you see the "Root user sign in" prompt, asking for your e-mail and password, select **Sign in to a different account**
 
